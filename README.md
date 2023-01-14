@@ -40,6 +40,24 @@ scdl -l https://soundcloud.com/pandadub/sets/the-lost-ship --sync archive.txt
 scdl me -f
 ```
 
+## Docker
+Run as a container. See the (Docker Hub page)[https://hub.docker.com/repository/docker/hamishbrindle/scdl/general] for details on the container. Use it like:
+
+```sh
+$ docker run --rm -v $(pwd):/music hamishbrindle/scdl -h"
+```
+
+### Alias
+I find it easier to setup an alias in your bashrc/zshrc/etc file for this command:
+```sh
+alias scdl="docker run --rm -v $(pwd):/music hamishbrindle/scdl"
+```
+
+Then you can use it like:
+```sh
+$ scdl -l https://soundcloud.com/toddchamp/bjork-cute
+```
+
 ## Options:
 ```
 -h --help                       Show this screen
