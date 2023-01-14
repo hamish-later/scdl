@@ -41,7 +41,7 @@ scdl me -f
 ```
 
 ## Docker
-Run as a container. See the (Docker Hub page)[https://hub.docker.com/repository/docker/hamishbrindle/scdl/general] for details on the container. Use it like:
+Run as a container. See the [Docker Hub page](https://hub.docker.com/repository/docker/hamishbrindle/scdl/general) for details on the container. Use it like:
 
 ```sh
 $ docker run --rm -v $(pwd):/music hamishbrindle/scdl -h"
